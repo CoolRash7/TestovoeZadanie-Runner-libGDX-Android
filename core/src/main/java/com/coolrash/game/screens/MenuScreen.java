@@ -64,6 +64,8 @@ public class MenuScreen implements Screen {
             public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
                 Additions.gameOver = false;
                 Additions.score = 0;
+                music.stop();
+                music.dispose();
                 game.gotoGameScreen();
 
                 return true;
@@ -165,5 +167,6 @@ public class MenuScreen implements Screen {
         texBg.dispose();
         texLogo.dispose();
         stage.dispose();
+        music.dispose();
     }
 }
