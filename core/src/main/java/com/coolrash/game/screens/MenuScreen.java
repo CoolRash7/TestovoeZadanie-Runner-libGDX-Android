@@ -65,7 +65,6 @@ public class MenuScreen implements Screen {
                 Additions.gameOver = false;
                 Additions.score = 0;
                 music.stop();
-                music.dispose();
                 game.gotoGameScreen();
 
                 return true;
